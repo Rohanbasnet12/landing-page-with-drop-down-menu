@@ -80,6 +80,14 @@ body {
     outline: 2px solid var(--BLACK);
 }
 
+#sideBarMenu {
+    width: 88%;
+}
+
+.home-info {
+    width: 60%;
+}
+
 /* Making dropdown component */
 .dropDown-menu {
     border-radius: 0.7em;

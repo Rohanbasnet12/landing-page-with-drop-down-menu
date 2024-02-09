@@ -7,6 +7,16 @@
 }
 
 @media (max-width: 883px) {
+    #home {
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+
+    #nav {
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+
     #nav-list {
         display: none;
     }
@@ -17,5 +27,27 @@
 
     #ham-menu {
         display: block;
+    }
+
+    .home-info {
+        width: 80%;
+    }
+}
+
+@media (max-width: 619px) {
+    .home-info h1 {
+        font-size: 11vw !important;
+    }
+
+    #logo {
+        gap: 0;
+    }
+
+    .logo-img {
+        scale: .6;
+    }
+
+    .home-info {
+        width: 90%;
     }
 }
