@@ -1,0 +1,111 @@
+/* Links */
+@import url('https://fonts.googleapis.com/css2?family=Epilogue:wght@500;700&display=swap');
+
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* CSS Variables */
+:root {
+    /* Font family */
+    --PRIMARY-FONT: 'Epilogue', sans-serif;
+
+    /* Font weight */
+    --WEIGHT-1: 500;
+    --WEIGHT-2: 700;
+
+    /* Neutral colors */
+    --LIGHT-WHITE: hsl(0, 0%, 98%);
+    --MED-GRAY: hsl(0, 0%, 41%);
+    --BLACK: hsl(0, 0%, 8%);
+
+    /* Font size */
+    --PARAH-SIZE: 18px;
+}
+
+/* Utils */
+
+/* General styles */
+html,
+body {
+    scroll-behavior: smooth;
+}
+
+/* Styling main section */
+#main {
+    width: 100%;
+    background: var(--LIGHT-WHITE);
+    font-family: var(--PRIMARY-FONT);
+}
+
+/* Styling header section */
+#nav-list a {
+    color: var(--MED-GRAY);
+}
+
+#nav-list a:hover {
+    color: var(--BLACK);
+}
+
+#right button {
+    color: var(--MED-GRAY);
+}
+
+#right button:hover {
+    color: var(--BLACK);
+}
+
+.btnBox {
+    padding: .5rem .8rem .4rem .8rem;
+    border-radius: .5em;
+    border: 2px solid var(--MED-GRAY);
+}
+
+.btn {
+    color: white;
+    background: var(--BLACK);
+    padding: 1rem 2rem;
+    font-size: 1.5rem;
+    font-weight: var(--WEIGHT-2);
+    border-radius: 1rem;
+    transition: all .21s ease-in;
+}
+
+.btn:hover {
+    background: transparent;
+    color: var(--BLACK);
+    outline: 2px solid var(--BLACK);
+}
+
+/* Making dropdown component */
+.dropDown-menu {
+    border-radius: 0.7em;
+    position: absolute;
+    background: white;
+    box-shadow: .1em .1em .81em .1em #9a9a9a;
+    display: none;
+}
+
+.dropdown-box:first-child .dropDown-menu {
+    transform: translateX(-50px);
+}
+
+.dropdown-box:first-child:hover .dropDown-menu {
+    display: block;
+}
+
+.dropdown-box:nth-child(2):hover .dropDown-menu {
+    display: block;
+}
+
+.item>p {
+    color: var(--MED-GRAY);
+    cursor: pointer;
+}
+
+.item>p:hover {
+    color: var(--BLACK);
+}
