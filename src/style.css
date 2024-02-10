@@ -27,11 +27,15 @@
 }
 
 /* Utils */
+.dropdown-box {
+    z-index: 10;
+}
 
 /* General styles */
 html,
 body {
     scroll-behavior: smooth;
+    overflow: hidden;
 }
 
 /* Styling main section */
@@ -84,6 +88,39 @@ body {
     width: 88%;
 }
 
+/* Styling home section */
+.container {
+    overflow: hidden;
+}
+
+.home-leftSection {
+    animation: slideLeft 1s forwards;
+}
+
+@keyframes slideLeft {
+    0% {
+        transform: translateX(-150%);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}
+
+.home-rightSection {
+    animation: slideRight 1s forwards;
+}
+
+@keyframes slideRight {
+    0% {
+        transform: translateX(150%);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}
+
 .home-info {
     width: 60%;
 }
@@ -116,4 +153,33 @@ body {
 
 .item>p:hover {
     color: var(--BLACK);
+}
+
+/* Making ham burger menu */
+.show-sideBar {
+    position: absolute;
+    top: 0;
+    z-index: 9;
+    background: var(--LIGHT-WHITE);
+    filter: brightness(1);
+    padding-left: 2rem;
+}
+
+#ham-menu {
+    z-index: 11;
+}
+
+.ham-list {
+    width: 60%;
+    height: 90%;
+    right: 0;
+    bottom: 0;
+    background: var(--LIGHT-WHITE);
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding-left: 2rem;
+    scroll-behavior: none;
+    display: none;
 }
